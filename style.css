@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+}
+
+header nav .h-container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.support {
+    display: inline-block;
+    width: 100%;
+}
+
+.h-box {
+    min-height: 78px;
+    /* background-color: rgb(214, 170, 255); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+.left-h {
+    /* width: 47%; */
+    display: flex;
+    align-items: center;
+    min-height: 78px;
+    /* --  */
+    /* background: lavender; */
+}
+
+.right-h {
+    width: 200px;
+    min-height: 78px;
+    margin-right: 3%;
+    /* --  */
+    /* background: lavender; */
+}
+
+.menu-p {
+    display: flex;
+    margin-left: 6px;
+    align-items: center;
+    position: relative;
+}
+
+.menu-p li {
+    list-style: none;
+    padding: 0 14px;
+    border-right: 2px solid black;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-p li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-p li a:hover {
+    font-weight: bold;
+}
+
+.menu-p :nth-child(4) {
+    border-right: none;
+}
+
+.menu-p :nth-child(5) {
+    border-right: none;
+    background-color: black;
+    padding: 7px 21px;
+}
+
+.menu-p :nth-child(5) a {
+    color: #fff500;
+}
+
+.menu-p li img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-p li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 78px;
+}
+
+.search-p select {
+    border: none;
+    background: none;
+    width: 97px;
+    margin-left: 3px;
+}
+
+.search-p a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.chevron-down {
+    text-align: center;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding-top: 31px;
+}
+
+
+/* -------dublicate menu ---   */
+.menu-f-b,
+.menu-h-bx,
+.menu-h-pt,
+.menu-au,
+.menu-lt {
+    width: 220px;
+    position: absolute;
+    top: 21px;
+    left: -13px;
+    /* background-color: #f7caca; */
+    padding: 7px 0px;
+    border-bottom: 3px solid #fff500;
+    display: none;
+}
+
+.menu-f-b ul li,
+.menu-h-bx ul li,
+.menu-h-pt ul li,
+.menu-au ul li,
+.menu-lt ul li {
+    border-right: unset;
+    padding: 6px 8px;
+    justify-content: space-between;
+}
+
+.menu-f-b ul li a,
+.menu-h-bx ul li a,
+.menu-h-pt ul li a,
+.menu-au ul li a,
+.menu-lt ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-f-b ul i,
+.menu-h-bx ul i,
+.menu-h-pt ul i,
+.menu-au ul i,
+.menu-lt ul i {
+    font-size: 9px;
+}
+
+/* ----------end dublicate ----  */
+
+
+.fhb-for:hover .menu-f-b {
+    display: block;
+}
+
+.hbx-home:hover .menu-h-bx {
+    display: block;
+}
+
+.htp-home:hover .menu-h-pt {
+    display: block;
+}
+
+.au-about:hover .menu-au {
+    display: block;
+}
+
+.lt-leadership:hover .menu-lt {
+    display: block;
+}
+
+
+.menu-h-bx {
+    left: 219px;
+    top: 48px;
+}
+
+.menu-h-pt {
+    left: 219px;
+    top: 91px;
+}
+
+.menu-au {
+    left: 138px;
+}
+
+.menu-lt {
+    left: 219px;
+    top: 108px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1200.9px) {
+    .h-box .left-h .h-logo img {
+        width: 110px;
+        height: 42px;
+    }
+
+    .h-box .menu-p {
+        display: none;
+    }
+
+    .h-box .right-h {
+        width: 100%;
+    }
+
+    .h-box .right-h li .globe {
+        display: none;
+    }
+
+    .right-h .search-p select {
+        padding-left: 22px;
+    }
+
+    .h-box {
+        min-height: 53px;
+    }
+
+    .h-box .left-h,
+    .right-h,
+    .search-p {
+        min-height: 53px;
+    }
+
+    .search-p .search {
+        display: none;
+    }
+
+    .h-box .right-h {
+        margin-right: unset;
+    }
+
+    .search-p .hamberger {
+        font-size: 26px;
+        margin-left: 12px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    /* ---hamberger--- */
+    .hamberger-r{
+        width: 23px;
+        margin-left: 10px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .hamberger-r div,.hamberger-r:before,.hamberger-r:after{
+        background: black;
+        content: "";
+        display: block;
+        height: 2.3px;
+        margin: 6px 0;
+        transition: 0.6s ease;
+    }
+   
+
+    .hamberger-r div{
+        transition: unset;
+    }
+    .hamberger-active::before{
+        transform: translateY(8px) rotate(-135deg);
+    }
+    .hamberger-active::after{
+        transform: translateY(-8px) rotate(135deg);
+    }
+    .hamberger-active div{
+        transform: scale(0);
+    }
+    .hamberger-r:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+   
+
+    /* --------MoB-Navigation---- */
+    .mob-navigation {
+        font-family: 'Lato';
+    }
+
+    .mob-navigation li {
+        list-style: none;
+        font-size: 15px;
+    }
+
+
+    .mob-navigation ul li .mobLidiv  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 18px 25px;
+        font-weight: bold;
+    }
+
+    .mob-navigation li a {
+        text-decoration: none;
+        color: black;
+    }
+
+  
+
+    .mob-navigation .childmenu-ul {
+        height: 0;
+        overflow: hidden;
+        transition: 1s linear;
+        background-color: #f7f7f7;
+        }
+
+    .mob-navigation .childmenu-ul li {
+        padding: unset;
+    }
+
+    .mobLidiv {
+        -webkit-tap-highlight-color: transparent;
+        border-bottom: 1px solid #d3d2d2;
+    }
+
+    header nav .h-container {
+        padding: 0 10px;
+    }
+
+
+    /* ----js css---- */
+    .mob-navigation {
+        display: none;
+    }
+
+    .mob-navigation.open {
+        display: block;
+    } 
+
+
+}
+
+
+@media screen and (max-width:767.9px) {
+    .h-box .left-h .h-logo img {
+        width: 90px;
+        height: 34px;
+    }
+
+
+}
+
+@media screen and (min-width:1201px) {
+    .search-p .hamberger {
+        display: none;
+    }
+
+    .mob-navigation {
+        display: none;
+    }
+}

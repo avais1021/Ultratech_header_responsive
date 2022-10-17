@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* HEADER ------------------------  */
+
 i {
     font-family: "Font Awesome 6 Free";
     font-style: normal;
@@ -263,14 +266,17 @@ header nav .h-container {
         margin-left: 12px;
         -webkit-tap-highlight-color: transparent;
     }
+
     /* ---hamberger--- */
-    .hamberger-r{
+    .hamberger-r {
         width: 23px;
         margin-left: 10px;
         -webkit-tap-highlight-color: transparent;
     }
 
-    .hamberger-r div,.hamberger-r:before,.hamberger-r:after{
+    .hamberger-r div,
+    .hamberger-r:before,
+    .hamberger-r:after {
         background: black;
         content: "";
         display: block;
@@ -278,26 +284,30 @@ header nav .h-container {
         margin: 6px 0;
         transition: 0.6s ease;
     }
-   
 
-    .hamberger-r div{
+
+    .hamberger-r div {
         transition: unset;
     }
-    .hamberger-active::before{
+
+    .hamberger-active::before {
         transform: translateY(8px) rotate(-135deg);
     }
-    .hamberger-active::after{
+
+    .hamberger-active::after {
         transform: translateY(-8px) rotate(135deg);
     }
-    .hamberger-active div{
+
+    .hamberger-active div {
         transform: scale(0);
     }
-    .hamberger-r:hover{
+
+    .hamberger-r:hover {
         opacity: 0.5;
         cursor: pointer;
     }
-    
-   
+
+
 
     /* --------MoB-Navigation---- */
     .mob-navigation {
@@ -310,7 +320,7 @@ header nav .h-container {
     }
 
 
-    .mob-navigation ul li .mobLidiv  {
+    .mob-navigation ul li .mobLidiv {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -324,14 +334,14 @@ header nav .h-container {
         color: black;
     }
 
-  
+
 
     .mob-navigation .childmenu-ul {
         height: 0;
         overflow: hidden;
         transition: 1s linear;
         background-color: #f7f7f7;
-        }
+    }
 
     .mob-navigation .childmenu-ul li {
         padding: unset;
@@ -346,6 +356,10 @@ header nav .h-container {
         padding: 0 10px;
     }
 
+    .accordian .menu {
+        cursor: pointer;
+    }
+
 
     /* ----js css---- */
     .mob-navigation {
@@ -354,7 +368,7 @@ header nav .h-container {
 
     .mob-navigation.open {
         display: block;
-    } 
+    }
 
 
 }
@@ -378,3 +392,173 @@ header nav .h-container {
         display: none;
     }
 }
+
+
+/* POPUP ------------------------------------------ */
+
+.popup_container {
+    padding: 0 7%;
+}
+
+
+/* body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 59%);
+    top: 0;
+    z-index: -1;
+    display: none;
+} */
+
+.box_getintouch {
+    max-width: 750px;
+    min-height: 562px;
+    border-bottom: 4px solid yellow;
+    background: white;
+    margin: -12px auto 0 auto;
+    position: relative;
+    padding: 50px 60px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.close_btn {
+    width: 45px;
+    height: 35px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_btn div {
+    width: 21px;
+    height: 21px;
+    position: relative;
+}
+
+.close_btn div::before {
+    content: "";
+    border-top: 4px solid black;
+    width: 100%;
+    position: absolute;
+    top: 42%;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+
+.close_btn div::after {
+    content: "";
+    border-bottom: 4px solid black;
+    width: 100%;
+    position: absolute;
+    top: 42%;
+    transform: rotate(-42deg);
+    border-radius: 3px;
+}
+
+.popup_sec {
+    display: none;
+}
+
+.box_getintouch h4{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.get_anser{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.box_getintouch input{
+    padding: 14px 12px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.full_name{
+    width: 100%;
+    margin-top: 30px;
+}
+.box_getintouch .mob_pin{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.box_getintouch .mob_pin input{
+    width: 48.5%;
+}
+.box_getintouch .category select{
+    padding:14px 12px;
+    width: 48.5%;
+    font-size: 16px;
+}
+.box_getintouch .category select:focus{
+    outline: none;
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox_pop{
+    display: flex;
+    margin-top: 20px;
+}
+.checkbox_pop p{
+    font-size: 19px;
+    max-width: 400px;
+    margin-left: 10px;
+    line-height: 28px;
+}
+.checkbox_pop input{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.button_s{
+    margin-top: 30px;
+    width: 220px;
+    position: relative;
+}
+.button_s button{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    padding: 18px 12px;
+    background: yellow;
+    border: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.button_s i{
+    position: absolute;
+    right: 14px;
+    top: 35%;
+}
+.button_s a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Scrollbar css --------------- */
+
+/* ::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+} */

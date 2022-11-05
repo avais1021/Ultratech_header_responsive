@@ -13,8 +13,8 @@ i {
 }
 
 header nav .h-container {
-    padding: 0 20px;
     margin: 0 auto;
+    max-width: 1160px;
 }
 
 .support {
@@ -29,7 +29,11 @@ header nav .h-container {
     justify-content: space-between;
     align-items: center;
     font-family: 'Lato';
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.h-box .h-logo {
+    z-index: 10;
 }
 
 .left-h {
@@ -42,9 +46,10 @@ header nav .h-container {
 }
 
 .right-h {
-    width: 200px;
     min-height: 78px;
-    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     /* --  */
     /* background: lavender; */
 }
@@ -53,13 +58,35 @@ header nav .h-container {
     display: flex;
     margin-left: 6px;
     align-items: center;
+    justify-content: right;
     position: relative;
+    min-height: 78px;
+}
+
+.search_bar{
+    list-style: none;
+    margin-left: 20px;
+
+} 
+.search_bar li{
+    display: flex;
+    align-items: center;
+}
+.search_bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.search_bar img{
+    width: 14px;
+    margin-right: 2px;
+    margin-bottom: -2px;
 }
 
 .menu-p li {
     list-style: none;
-    padding: 0 14px;
-    border-right: 2px solid black;
+    padding: 0 20px;
+    border-right: 1px solid black;
     min-height: 25px;
     display: flex;
     align-items: center;
@@ -68,6 +95,7 @@ header nav .h-container {
 .menu-p li a {
     color: black;
     text-decoration: none;
+    min-height: 22px;
 }
 
 .menu-p li a:hover {
@@ -80,8 +108,8 @@ header nav .h-container {
 
 .menu-p :nth-child(5) {
     border-right: none;
-    background-color: black;
-    padding: 7px 21px;
+    background: #333333;
+    padding: 9px 26px;
 }
 
 .menu-p :nth-child(5) a {
@@ -104,6 +132,7 @@ header nav .h-container {
     justify-content: space-between;
     align-items: center;
     min-height: 78px;
+    margin-left: 16px;
 }
 
 .search-p select {
@@ -111,6 +140,7 @@ header nav .h-container {
     background: none;
     width: 97px;
     margin-left: 3px;
+    font-size: 16px;
 }
 
 .search-p a {
@@ -136,9 +166,9 @@ header nav .h-container {
 .menu-lt {
     width: 220px;
     position: absolute;
-    top: 21px;
+    top: 29px;
     left: -13px;
-    /* background-color: #f7caca; */
+    background-color: white;
     padding: 7px 0px;
     border-bottom: 3px solid #fff500;
     display: none;
@@ -216,7 +246,16 @@ header nav .h-container {
     top: 108px;
 }
 
-
+/* ---------------  */
+.text {
+    height: 300px;
+    background-image: url(images/ooh-desktop-banner-hi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
 
 
 
@@ -307,6 +346,13 @@ header nav .h-container {
         cursor: pointer;
     }
 
+    .search_bar a {
+        font-size: 18px;
+    }
+    .search_bar img {
+        width: 15px;
+    }
+
 
 
     /* --------MoB-Navigation---- */
@@ -375,10 +421,10 @@ header nav .h-container {
 
 
 @media screen and (max-width:767.9px) {
-    .h-box .left-h .h-logo img {
+    /* .h-box .left-h .h-logo img {
         width: 90px;
         height: 34px;
-    }
+    } */
 
 
 }
@@ -464,72 +510,81 @@ header nav .h-container {
 
 .popup_sec {
     display: none;
+    position: absolute;
+    width: 100%;
 }
 
-.box_getintouch h4{
+.box_getintouch h4 {
     font-size: 28px;
     font-weight: bold;
 }
 
-.get_anser{
+.get_anser {
     margin-top: 10px;
     font-size: 20px;
 }
 
-.box_getintouch input{
+.box_getintouch input {
     padding: 14px 12px;
     font-size: 16px;
     letter-spacing: 0.5px;
 }
 
-.full_name{
+.full_name {
     width: 100%;
     margin-top: 30px;
 }
-.box_getintouch .mob_pin{
+
+.box_getintouch .mob_pin {
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
 }
-.box_getintouch .mob_pin input{
+
+.box_getintouch .mob_pin input {
     width: 48.5%;
 }
-.box_getintouch .category select{
-    padding:14px 12px;
+
+.box_getintouch .category select {
+    padding: 14px 12px;
     width: 48.5%;
     font-size: 16px;
 }
-.box_getintouch .category select:focus{
+
+.box_getintouch .category select:focus {
     outline: none;
 }
 
-.category{
+.category {
     display: flex;
     justify-content: space-between;
 }
 
-.checkbox_pop{
+.checkbox_pop {
     display: flex;
     margin-top: 20px;
 }
-.checkbox_pop p{
+
+.checkbox_pop p {
     font-size: 19px;
     max-width: 400px;
     margin-left: 10px;
     line-height: 28px;
 }
-.checkbox_pop input{
+
+.checkbox_pop input {
     width: 20px;
     height: 20px;
     margin-top: 7px;
 }
 
-.button_s{
+.button_s {
     margin-top: 30px;
     width: 220px;
     position: relative;
 }
-.button_s button{
+
+.button_s button {
     width: 100%;
     text-align: left;
     font-size: 18px;
@@ -539,14 +594,33 @@ header nav .h-container {
     -webkit-appearance: button;
     cursor: pointer;
 }
-.button_s i{
+
+.button_s i {
     position: absolute;
     right: 14px;
     top: 35%;
 }
-.button_s a{
+
+.button_s a {
     text-decoration: none;
     color: black;
+}
+
+
+@media screen and (max-width:450.9px){
+    .search_bar a {
+        font-size: 16px;
+    }
+    .search_bar img {
+        width: 13px;
+    }
+    .search-p select {
+        font-size: 14px;
+        width: 73px;
+    }
+    .search-p {
+        margin-left: 7px;
+    }
 }
 
 
